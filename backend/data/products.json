@@ -1,0 +1,29 @@
+[
+  {
+    "id": "e9eb1d90-26ef-49a2-b8ba-5abead491d83",
+    "name": "anhnhacem",
+    "price": 100000000,
+    "stock": 0,
+    "imageUrl": "/images/1760703076941.png",
+    "status": "Hết hàng",
+    "updatedAt": "2025-10-17T12:17:21.066Z"
+  },
+  {
+    "id": "7b19af3d-9cab-460c-a8e3-44a309da00c2",
+    "name": "Drop chair",
+    "price": 100000,
+    "stock": 5,
+    "imageUrl": "/images/1760697607792.jpg",
+    "status": "Hàng còn ít",
+    "updatedAt": "2025-10-17T12:17:29.117Z"
+  },
+  {
+    "id": "962c441b-52a7-4937-8679-0d6f353fcab2",
+    "name": "sanpham",
+    "price": 10000,
+    "stock": 12,
+    "imageUrl": "/images/1760697561796.jpg",
+    "status": "Còn hàng",
+    "updatedAt": "2025-10-17T10:39:21.837Z"
+  }
+]
