@@ -1,8 +1,10 @@
 {
   "name": "week3_react",
-  "private": true,
   "version": "0.0.0",
-  "type": "module",
+  "private": true,
+  "engines": {
+    "node": ">=18 <22"
+  },
   "scripts": {
   "dev": "vite",
   "build": "vite build",
