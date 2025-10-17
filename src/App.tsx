@@ -4,6 +4,8 @@ import RegisterForm from "./components/forms/RegisterForm";
 import Dashboard from "./pages/Dashboard";
 import Layout from "./components/layout/Layout";
 import useUserStore from "./store/userStore";
+import OrdersPage from "./pages/orders/OrdersPage";
+import InventoryPage from "./pages/AdminViews/InventoryPage";
 
 export default function App() {
   const { user } = useUserStore();
@@ -17,6 +19,8 @@ export default function App() {
         path="/dashboard"
         element={user ? <Layout><Dashboard /></Layout> : <Navigate to="/login" />}
       />
+      <Route path="/orders" element={<OrdersPage />} />
+      <Route path="/inventory" element={<InventoryPage />} />
     </Routes>
   );
 }
