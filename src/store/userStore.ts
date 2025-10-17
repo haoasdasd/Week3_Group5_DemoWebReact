@@ -7,9 +7,10 @@ interface UserState {
 }
 
 const useUserStore = create<UserState>((set) => ({
-  user: null,
+  user: "Admin", 
   login: (username) => set({ user: username }),
   logout: () => set({ user: null }),
 }));
+
 
 export default useUserStore;
