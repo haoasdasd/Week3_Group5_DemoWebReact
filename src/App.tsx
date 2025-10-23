@@ -10,7 +10,8 @@ import LoginPage from "@/components/forms/LoginForm";
 import RegisterPage from "@/components/forms/RegisterForm";
 import AdminLoginPage from "@/components/forms/AdminLoginForm"; 
 import OrdersPageUsers from "./components/pages/user/OrdersPageUsers";
-import Dashboard from "@/components/dashboard/Dashboard";
+import UserManagement from "./components/pages/admin/UserManagement";
+import DashboardPage from "./components/pages/admin/DashboardPage";
 function App() {
   return (
     <BrowserRouter>
@@ -34,9 +35,10 @@ function App() {
         <Route path="/admin" element={<AdminLayout />}>
           <Route index element={<Navigate to="inventory" replace />} />
           <Route path="inventory" element={<InventoryPage />} />
+          <Route path="usermanagement" element={<UserManagement />} />
           <Route path="orders" element={<OrderAdminPage />} />
           <Route path="user-orders" element={<OrdersPage />} />
-          <Route path="dashboard" element={<Dashboard />} />
+          <Route path="dashboard" element={<DashboardPage />} />
         </Route>
 
         {/* 404 */}
