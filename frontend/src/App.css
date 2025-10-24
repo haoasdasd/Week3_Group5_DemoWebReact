@@ -1,10 +1,38 @@
+
+html,
+body,
 #root {
-  max-width: 1280px;
-  margin: 0 auto;
-  padding: 2rem;
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
   text-align: center;
 }
 
+/* 🚫 Bỏ max-width, padding thừa */
+#root {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* 🧩 Nếu có form-container cũ vẫn giữ căn giữa chuẩn */
+.form-container {
+  background: white;
+  padding: 30px;
+  border-radius: 16px;
+  box-shadow: none; /* ← Không còn bóng mờ */
+  width: 350px;
+  text-align: center;
+
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+/* Các hiệu ứng cũ nếu cần */
 .logo {
   height: 6em;
   padding: 1.5em;
@@ -40,20 +68,6 @@
 .read-the-docs {
   color: #888;
 }
-.form-container {
-  background: white;
-  padding: 30px;
-  border-radius: 16px;
-  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
-  width: 350px;
-  text-align: center;
-
-  /* căn giữa màn hình */
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-}
 
 .toggle-text {
   margin-top: 15px;
@@ -70,4 +84,3 @@
 .toggle-link:hover {
   color: #0056b3;
 }
-

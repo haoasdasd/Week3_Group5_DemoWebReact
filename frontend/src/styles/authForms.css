@@ -1,0 +1,20 @@
+.auth-container {
+  @apply relative flex items-center justify-center min-h-screen w-full px-4;
+}
+
+.auth-card {
+  @apply w-full max-w-md rounded-2xl shadow-2xl p-8 transition-all duration-500 text-center;
+  backdrop-filter: blur(16px);
+}
+
+.auth-input {
+  @apply w-full px-4 py-2 rounded-lg border focus:outline-none focus:ring-2 transition-all duration-300;
+}
+
+.auth-button {
+  @apply w-full py-2 font-semibold rounded-lg transition-all duration-300 shadow-md;
+}
+
+.auth-link {
+  @apply font-medium underline-offset-4 hover:underline;
+}

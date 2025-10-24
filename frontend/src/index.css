@@ -1,0 +1,80 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.input {
+  @apply w-full px-4 py-2 rounded-lg border border-gray-300 dark:border-gray-700 focus:ring-2 focus:ring-purple-500 outline-none bg-white/80 dark:bg-gray-800/70 transition;
+}
+
+.btn-primary {
+  @apply bg-gradient-to-r from-purple-500 to-pink-500 text-white py-2 rounded-lg font-semibold hover:opacity-90 transition;
+}
+/* ☁️ Cloud layers */
+.cloud-layer {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 400%;
+  height: 100%;
+  background-repeat: repeat-x;
+  background-size: contain;
+  pointer-events: none;
+  filter: blur(2px);
+}
+
+/* Ảnh mây siêu mượt (link mới, ổn định 100%) */
+.far-clouds {
+  background-image: url("https://cdn.jsdelivr.net/gh/MinhPhucCloudAssets/clouds/far-clouds.png");
+  animation: moveFarClouds 240s linear infinite, floatClouds 25s ease-in-out infinite;
+}
+
+.mid-clouds {
+  background-image: url("https://cdn.jsdelivr.net/gh/MinhPhucCloudAssets/clouds/mid-clouds.png");
+  animation: moveMidClouds 180s linear infinite, floatClouds 20s ease-in-out infinite;
+}
+
+.near-clouds {
+  background-image: url("https://cdn.jsdelivr.net/gh/MinhPhucCloudAssets/clouds/near-clouds.png");
+  animation: moveNearClouds 120s linear infinite, floatClouds 15s ease-in-out infinite;
+}
+
+/* Di chuyển ngang (parallax 3 lớp) */
+@keyframes moveFarClouds {
+  from {
+    transform: translateX(0);
+  }
+  to {
+    transform: translateX(-25%);
+  }
+}
+
+@keyframes moveMidClouds {
+  from {
+    transform: translateX(0);
+  }
+  to {
+    transform: translateX(-35%);
+  }
+}
+
+@keyframes moveNearClouds {
+  from {
+    transform: translateX(0);
+  }
+  to {
+    transform: translateX(-45%);
+  }
+}
+
+/* Hiệu ứng mây phập phồng nhẹ */
+@keyframes floatClouds {
+  0% {
+    transform: translateY(0px) scale(1);
+  }
+  50% {
+    transform: translateY(-10px) scale(1.03);
+  }
+  100% {
+    transform: translateY(0px) scale(1);
+  }
+}

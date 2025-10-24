@@ -11,12 +11,20 @@
   },
   "dependencies": {
     "@tanstack/react-query": "^5.90.3",
+    "@tsparticles/react": "^3.0.0",
+    "@tsparticles/slim": "^3.9.1",
+    "axios": "^1.12.2",
     "framer-motion": "^12.23.24",
+    "lucide-react": "^0.545.0",
+    "particles-bg": "^2.5.5",
     "react": "^19.1.1",
     "react-dom": "^19.1.1",
     "react-hook-form": "^7.65.0",
+    "react-hot-toast": "^2.6.0",
     "react-router-dom": "^7.9.4",
+    "react-tsparticles": "^2.12.2",
     "recharts": "^3.2.1",
+    "tsparticles": "^3.9.1",
     "zustand": "^5.0.8"
   },
   "devDependencies": {
